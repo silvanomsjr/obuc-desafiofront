@@ -18,18 +18,24 @@ export const Content = styled.div`
   align-items: center;
   flex-direction: column;
   & > a {
+    color: #fff;
     text-decoration: none;
-    padding: 1rem;
-    margin-top: 2rem;
-    border-radius: 8px;
-    background-color: #f9baca;
+    padding: 1rem 1.5rem;
+    margin-top: 1rem;
     font-weight: 700;
-    color: #000;
-    transition: all .2s ease-in;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border: 2px solid ${(props) => props.theme.pink};
+    background: ${(props) => props.theme.pink};
+    border-radius: 8px;
   }
 
   & > a:hover {
-    background-color: #ef8fa4;
+    background: #fff;
+    color: ${(props) => props.theme.pink};
   }
 `;
 
